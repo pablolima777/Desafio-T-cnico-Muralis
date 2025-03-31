@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imgs/Design-sem-nome.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>ProjetoAPIContatos</title>
+</head>
+<body>
+    <div class="box">
+        
+        <h1>Gestão de Contatos</h1>
+        <form id="formulario">
+            <input type="hidden" id="id">
+            <input type="text" class="nome" id="nome" name="nome" placeholder="Nome" required>
+            <input type="text" class="cpf" id="cpf" name="cpf" placeholder="CPF" required>
+            <input type="date" class="data_nascimento" id="data_nascimento" name="data_nascimento" required>
+            <input type="text" class="endereco" id="endereco" name="endereco" placeholder="Endereço" required>
+            <input type="text" class="tipo" id="tipo" name="tipo" placeholder="Tipo (Telefone/E-mail)" required>
+            <input type="text" class="valor" id="valor" name="valor" placeholder="Valor" required>
+            <input type="text" class="observacao" id="observacao" name="observacao" placeholder="Observação">
+            <button id="btnCadastrar">Cadastrar</button>
+        </form>
+        
+        <h2>Lista de Contatos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>Contato</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="tabelaUsuarios">
+                
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
